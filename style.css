@@ -1,0 +1,95 @@
+main {
+  width: 320px;
+  margin: 5px auto;
+}
+
+/* game */
+#display {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+h3 {
+  margin: 0;
+  width: 160px;
+}
+#board {
+  display: flex;
+  width: 320px;
+  flex-wrap: wrap;
+}
+.start {
+  height: 320px;
+  background: rgb(102, 204, 153);
+  color: white;
+  border-radius: 5px;
+}
+.start:hover {
+  opacity: 0.5;
+}
+#startBtn {
+  width: 320px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 280px;
+  cursor: pointer;
+}
+.cell {
+  width: 60px;
+  height: 60px;
+  margin: 2px;
+  border-radius: 3px;
+}
+.correctCell {
+  border: solid 4px red;
+  width: 52px;
+  height: 52px;
+}
+.heart::before {
+  font-family: "Material Icons";
+  content: "\e87d";
+}
+#end {
+  display: none;
+  width: 320px;
+  text-align: center;
+}
+#end h3 {
+  width: 320px;
+  text-align: center;
+}
+#end p {
+  cursor: pointer;
+  padding: 3px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background: black;
+  color: white;
+}
+#end p:hover {
+  background: white;
+  color: black;
+}
+.heart2 {
+  text-align: center;
+  line-height: 60px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.heart2::before {
+  font-family: "Material Icons";
+  content: "\e87e";
+  animation: fadein 2s infinite;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

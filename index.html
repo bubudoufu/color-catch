@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マスの中から色が一色だけのマスを探すゲーム</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="display">
+            <h3 id="levelDisplay">level: 0</h3>
+            <h3 id="timer">time: 10</h3>
+            <h3 id="life">life:
+                <span class="heart"></span>
+                <span class="heart"></span>
+                <span class="heart"></span>
+            </h3>
+            <h3 id="scoreDisplay">score: <span id="point">0</span></h3>
+        </div>
+        <div id="board" class="start">
+            <p id="startBtn">click here to start</p>
+        </div>
+        <div id="end">
+            <h3>GAME OVER</h3>
+            <p id="retryBtn">click here to try again</p>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
